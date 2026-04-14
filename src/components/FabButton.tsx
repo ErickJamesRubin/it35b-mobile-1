@@ -1,13 +1,32 @@
-import './ExploreContainer.css';
+import {IonFab, IonFabButton, IonFabList, IonIcon } from '@ionic/react';
+import {
+  chevronUpCircle,
+  colorPalette,
+  document,
+  globe,
+} from 'ionicons/icons';
 
 interface ContainerProps { }
 
-const NameContainer: React.FC<ContainerProps> = () => {
+const FabButton: React.FC<ContainerProps> = () => {
   return (
-    <div id="container">
-      <h1>Hello World Goodbye</h1>
-    </div>
+    <IonFab slot="fixed" vertical="bottom" horizontal="end">
+          <IonFabButton>
+            <IonIcon icon={chevronUpCircle}></IonIcon>
+          </IonFabButton>
+          <IonFabList side="top">
+            <IonFabButton>
+              <IonIcon icon={document}></IonIcon>
+            </IonFabButton>
+            <IonFabButton>
+              <IonIcon icon={colorPalette}></IonIcon>
+            </IonFabButton>
+            <IonFabButton>
+              <IonIcon icon={globe}></IonIcon>
+            </IonFabButton>
+          </IonFabList>
+        </IonFab>
   );
 };
 
-export default NameContainer;
+export default FabButton;
