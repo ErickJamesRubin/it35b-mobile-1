@@ -10,7 +10,7 @@ const Login:React.FC = () => {
             <IonHeader>
                     <IonToolbar>
                         <IonButtons slot="start">Login
-                            <IonMenuButton></IonMenuButton>
+                            
                         </IonButtons>
                 </IonToolbar>
             </IonHeader>
