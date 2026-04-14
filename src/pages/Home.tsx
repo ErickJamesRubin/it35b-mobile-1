@@ -14,5 +14,8 @@ const Home: React.FC = () => {
           <IonTitle>Erick</IonTitle>
     </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
- 
+      <IonContent fullscreen></IonContent>
+      </IonPage>
+  )}
+
+export default Home;
