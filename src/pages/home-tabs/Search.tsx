@@ -1,6 +1,6 @@
 import { IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-const Seach:React.FC = () => {
+const Search:React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
@@ -8,15 +8,15 @@ const Seach:React.FC = () => {
                         <IonButtons slot="start">
                             <IonMenuButton></IonMenuButton>
                         </IonButtons>
-                        <IonTitle>Seach</IonTitle>
+                        <IonTitle>Search</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
             <IonContent fullscreen>
-                <h1>Seach</h1>
+                <h1>Search</h1>
             </IonContent>
         </IonPage>
     );
 };
 
-export default Seach;
+export default Search;
