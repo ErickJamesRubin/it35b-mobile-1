@@ -25,9 +25,9 @@ import { homeOutline } from 'ionicons/icons';
                         {path.map((item,index) => (
                             <IonMenuToggle key={index}>
                                 <IonItem routerLink={item.url} routerDirection="forward">
-                                    <IonIcon></IonIcon>
-                                    <IonIcon icon={item.icon} slot="start"></IonIcon>
-                                </IonItem>
+                                    <IonIcon>Menu</IonIcon>
+                                    <IonIcon icon={item.icon} slot="start"></IonIcon>{item.name}
+                                 </IonItem>
 
                             </IonMenuToggle>
                         

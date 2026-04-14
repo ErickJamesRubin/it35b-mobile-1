@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, useIonRouter } from '@ionic/react';
+import { IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, useIonRouter } from '@ionic/react';
 
 const Login:React.FC = () => {
     const navigation = useIonRouter();
@@ -9,9 +9,9 @@ const Login:React.FC = () => {
         <IonPage>
             <IonHeader>
                     <IonToolbar>
-                        <IonButton slot="start">
+                        <IonButtons slot="start">
                             <IonMenuButton></IonMenuButton>
-                        </IonButton>
+                        </IonButtons>
                 </IonToolbar>
             </IonHeader>
 
