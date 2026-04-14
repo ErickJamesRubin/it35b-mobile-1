@@ -30,20 +30,21 @@ import { homeOutline } from 'ionicons/icons';
                                 </IonItem>
 
                             </IonMenuToggle>
+                        
                         ))}
 
                         <IonButton routerLink="/" routerDirection="back" expand="full">
-                            <IonIcon icon={logOutOutline} slot="start"></IonIcon>
-                            </IonButton>
+                            <IonIcon icon={logOutOutline} slot="start"></IonIcon>Logout
+                        </IonButton>
 
-                            </IonContent>
+                    </IonContent>
 
                 </IonMenu>
                 {/* Routing */}
-                <IonRouterOutlet id="main">
+                 <IonRouterOutlet id="main">
                     <Route exact path="/app/home" component={Home}></Route>
                     <Route exact path="/app">
-                        <Redirect to="/app/home" />
+                        <Redirect to="/app/home"/>
                     </Route>
 
                     <Route exact path="/app/about" component={About}></Route>
