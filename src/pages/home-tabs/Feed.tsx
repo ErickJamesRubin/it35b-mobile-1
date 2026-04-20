@@ -1,14 +1,14 @@
 import { IonList } from "@ionic/react";
-import { IonButton, IonButtons, IonContent, IonHeader, IonItem, IonLabel, IonMenuButton, IonPage, IonTitle, IonToolbar, Ion-list } from '@ionic/react';
+import { IonButton, IonButtons, IonContent, IonHeader, IonItem, IonLabel, IonMenuButton, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 
 const Feed:React.FC = () => {
 
     const games = [
     {name: 'Pokemon Yellow'},
-    {name: 'P<ega Man X'},
-    {name: 'Pokemon Yellow'},
-    {name: 'Pokemon Yellow'},
-    {name: 'Pokemon Yellow'}
+    {name: 'Mega Man X'},
+    {name: 'The Legend of Zelda'},
+    {name: 'Pac-Man'},
+    {name: 'Super Mario World'}
     ]
     return (
         <IonPage>
@@ -21,30 +21,16 @@ const Feed:React.FC = () => {
                 </IonToolbar>
             </IonHeader>
 
-            <IonContent fullscreen>
+            <IonContent className="ion-padding">
                 <IonList>
-            <IonItem>
-                <IonLabel>Pokémon Yellow</IonLabel>
-            </IonItem>
-            <IonItem>
-                <IonLabel>Mega Man X</IonLabel>
-            </IonItem>
-            <IonItem>
-                <IonLabel>The Legend of Zelda</IonLabel>
-            </IonItem>
-            <IonItem>
-                <IonLabel>Pac-Man</IonLabel>
-            </IonItem>
-            <IonItem>
-                <IonLabel>Super Mario World</IonLabel>
-            </IonItem>
-            </IonList>
-                {games.map((item,index) => (
+                    {games.map((item,index) => (
                 <IonItem key={index}>
                     <IonLabel>{item.name}</IonLabel>
                 </IonItem>
 
             ))}
+            </IonList>
+                
                 <h1>Feed</h1>
             </IonContent>
         </IonPage>
