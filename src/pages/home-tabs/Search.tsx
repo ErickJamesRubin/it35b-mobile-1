@@ -44,7 +44,7 @@ const Search:React.FC = () => {
                 >
                 </IonSearchbar>
                     <IonList>
-                                        {games.map((item,index) => (
+                                        {filtered.map((item,index) => (
                                     <IonCard key={index}>
                                     <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
                                     <IonCardHeader>
@@ -54,9 +54,7 @@ const Search:React.FC = () => {
                     
                     
                     
-                                    <IonCardContent>
-                                        Here's a small text description for the card content. Nothing more, nothing less.
-                                    </IonCardContent>
+                                    <IonCardContent></IonCardContent>
                                     <IonGrid>
                                         <IonRow>
                                         <IonCol>
