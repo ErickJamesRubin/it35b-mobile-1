@@ -46,7 +46,7 @@ const Search:React.FC = () => {
                     <IonList>
                                         {filtered.map((item,index) => (
                                     <IonCard key={index}>
-                                    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+                                    <img alt="Silhouette of mountains" src="https://2.bp.blogspot.com/-xhIWVABMORY/UX1d8ynHusI/AAAAAAAAAJU/2G8kejUEiW4/s1600/deoxys-banner.png" />
                                     <IonCardHeader>
                                         <IonCardTitle>{item.name}</IonCardTitle>
                                         <IonCardSubtitle>{item.details}</IonCardSubtitle>
