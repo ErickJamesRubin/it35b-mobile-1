@@ -25,50 +25,47 @@ const Feed:React.FC = () => {
             <IonContent className="ion-padding">
                 <IonList>
                     {games.map((item,index) => (
-                <IonItem key={index}>
-                    <IonLabel>{item.name}</IonLabel>
-                </IonItem>
+                <IonCard key={index}>
+                <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+                <IonCardHeader>
+                    <IonCardTitle>{item.name}</IonCardTitle>
+                    <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+                </IonCardHeader>
+
+
+
+                <IonCardContent>
+                    Here's a small text description for the card content. Nothing more, nothing less.
+                </IonCardContent>
+                <IonGrid>
+                    <IonRow>
+                    <IonCol>
+                        <IonButton fill="clear" expand="full">
+                            <IonIcon icon={thumbsUpOutline}></IonIcon>
+                            <IonLabel style={{ marginLeft: '5px' }}>Like</IonLabel>
+                        </IonButton>
+                    </IonCol>
+                    <IonCol>
+                        <IonButton fill="clear" expand="full">
+                            <IonIcon icon={chatboxOutline}></IonIcon>
+                            <IonLabel style={{ marginLeft: '5px' }}>Comment</IonLabel>
+                        </IonButton>
+                    </IonCol>
+                    <IonCol>
+                        <IonButton fill="clear" expand="full">
+                            <IonIcon icon={shareOutline}></IonIcon>
+                            <IonLabel style={{ marginLeft: '5px' }}>Share</IonLabel>
+                        </IonButton>
+                    </IonCol>
+                </IonRow>
+            </IonGrid>
+        </IonCard>
 
             ))}
 
-                    <IonCard>
-                    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-                    <IonCardHeader>
-                        <IonCardTitle>Card Title</IonCardTitle>
-                        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
-                    </IonCardHeader>
-
-
-
-                    <IonCardContent>
-                        Here's a small text description for the card content. Nothing more, nothing less.
-                    </IonCardContent>
-                    <IonGrid>
-                        <IonRow>
-                        <IonCol>
-                            <IonButton fill="clear" expand="full">
-                                <IonIcon icon={thumbsUpOutline}></IonIcon>
-                                <IonLabel style={{ marginLeft: '5px' }}>Like</IonLabel>
-                            </IonButton>
-                        </IonCol>
-                        <IonCol>
-                            <IonButton fill="clear" expand="full">
-                                <IonIcon icon={chatboxOutline}></IonIcon>
-                                <IonLabel style={{ marginLeft: '5px' }}>Comment</IonLabel>
-                            </IonButton>
-                        </IonCol>
-                        <IonCol>
-                            <IonButton fill="clear" expand="full">
-                                <IonIcon icon={shareOutline}></IonIcon>
-                                <IonLabel style={{ marginLeft: '5px' }}>Share</IonLabel>
-                            </IonButton>
-                        </IonCol>
-                    </IonRow>
-                </IonGrid>
-            </IonCard>
+                
                  </IonList>
                 
-                <h1>Feed</h1>
             </IonContent>
         </IonPage>
     );
