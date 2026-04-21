@@ -26,7 +26,7 @@ const Feed:React.FC = () => {
                 <IonList>
                     {games.map((item,index) => (
                 <IonCard key={index}>
-                <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+                <img alt="Silhouette of mountains" src="https://pokemongohub.net/wp-content/uploads/2019/11/Swords-of-Justice-pokemon-32387966-1280-720.jpg" />
                 <IonCardHeader>
                     <IonCardTitle>{item.name}</IonCardTitle>
                     <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
