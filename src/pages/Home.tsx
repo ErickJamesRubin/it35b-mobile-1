@@ -11,7 +11,7 @@ const Home : React.FC = () => {
   const tabs = [
     {name: 'Feed',tab:'feed',url:'/app/home/feed',icon:bookOutline},
     {name: 'Favorites',tab:'favorites',url:'/app/home/favorites',icon:star},
-    {name: 'Search',tab:'search',url:'/app/home/search',icon:search}
+    {name: 'Search',tab:'search',url:'/app/home/search',icon:search} 
   ]
   return (
     <IonReactRouter>
@@ -22,7 +22,7 @@ const Home : React.FC = () => {
             Tabs
           </IonTitle>
           </IonToolbar>
-          {/**/}
+          {/* Dynamic Tabs */}
           {tabs.map((item,index) => (
             <IonTabButton key={index} {...item} href={item.url}>
               <IonIcon icon={item.icon}></IonIcon>
