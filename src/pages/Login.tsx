@@ -17,8 +17,6 @@ const Login:React.FC = () => {
         });
     };
 
-    const
-
     return (
         <IonPage>
             <IonHeader>
